@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Adjusts depth of characters for rendering
 public class Depth : MonoBehaviour {
 
 	public float offset;
@@ -12,6 +13,6 @@ public class Depth : MonoBehaviour {
 		Xposition = transform.position.x;
 		Yposition = transform.position.y;
 		transform.position = new Vector3 (Xposition, Yposition, Yposition + offset);
-	
+
 	}
 }
